@@ -1,0 +1,26 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#app{
+	/*height: 100vh;*/
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+	background-color: red;
+	height: 5rem;
+}
+
+main{
+	background-color: green;
+	height: 25rem;
+}
+
+footer{
+	/*height: 3rem;*/
+	/*background-color: blue;*/
+}
