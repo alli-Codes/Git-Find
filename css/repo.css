@@ -1,0 +1,132 @@
+#repo{
+	padding: 30px;
+}
+
+#repo__user-container{
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	/*justify-content: space-around;*/
+	justify-content: space-between;
+}
+
+#back__btn{
+	background-color: transparent;
+	/*padding: 3rem 2rem;*/
+	border: none;
+	font-size: 1rem;
+	align-self: flex-start;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	position: absolute;
+	left: 5rem;
+}
+
+#back__btn:hover{
+	font-size: 1.3rem;
+}
+
+#repo__user-info{
+	/*display: flex;*/
+	align-items: center;
+}
+
+#repo__user-image{
+	background-image: url(/images/octocat.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 4rem;
+	width: 4rem;
+	padding: 2rem;
+	border-radius: 100%;
+}
+
+#repo__user-name{
+	padding: 0 1rem;
+	font-size: 14px;
+}
+
+#repo__user-name p{
+	color: #79968d;
+	font-size: 10px;
+}
+
+#repo__user-count{
+	font-size: 12px;
+}
+
+#repo__user-count span{
+	color: #009168;
+	padding: 0 5px;
+	font-size: 1.2rem;
+	font-family: poppins;
+}
+
+#repo__container{
+	/*background-color: red;*/
+	margin-top: 3rem;
+}
+
+#repo__component{
+	background-color: #d8f5ec;
+	/*height: 5rem;*/
+	width: 80%;
+	padding: 10px 10px;
+	margin: 20px 0;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	font-size: 13px;
+	transition: all 1s ease-out;
+}
+
+#repo__component:hover{
+	/*background-color: red;*/
+	box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+}
+
+#repo__component-main{
+	color: #009168;
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	word-break: break-all;
+	/*justify-content: center;*/
+	/*font-weight: lighter;*/
+}
+
+#repo__component-main p{
+	color: #5d736c;
+	margin: 0.5rem 0 0 0;
+	width: 70%;
+	word-break: break-all;
+	font-size: 10px;
+}
+
+#repo__component-footer{
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+#repo__component-icons{
+	color: #009168;
+	display: flex;
+}
+
+#repo__component-icons p{
+	padding: 0 5px;
+	font-size: 10px;
+}
+
+#repo__component-language p{
+	font-size: 11px;
+	/*font-weight: 600;*/
+}
+
+
+

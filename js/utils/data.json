@@ -1,0 +1,25 @@
+[{ 
+	"name": "Evans Allison", 
+	"username": "alli-codes",
+	"bio": "Hello, I am a Programmer and Designer",
+	"repo": "js/utils/repo.json"
+
+},
+
+{ 
+	"name": "Paul Ezeikiel-Hart", 
+	"username": "slick-codes",
+	"bio": "Hey, I am an IT expert",
+	"repo": "js/utils/repo.json"
+
+},
+
+{ 
+	"name": "Faith Godwin", 
+	"username": "iam-ignite",
+	"bio": "Hello, I code react",
+	"repo": "js/utils/repo.json"
+
+}
+
+]

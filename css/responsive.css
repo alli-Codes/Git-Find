@@ -1,0 +1,112 @@
+@media (max-width: 230px){
+	#user__name h3{
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 600px){
+
+	#search__container{
+		width: 90%;
+	}
+
+	#search__container i{
+		display: block;
+	}
+
+	#search__container input{
+
+	}
+
+	#search__container button{
+		color: white;
+		background-color: #00d99c;
+		border-radius: 5px;
+		padding: 10px 10px;
+		flex: 0.8;
+}
+
+	#user__section{
+		background-color: #d8f5ec;
+		width: 90%;
+		margin-top: 3rem;
+		border-radius: 10px;
+		flex-direction: row;
+		justify-content: space-around;
+		align-self: center;
+		box-shadow: -20px 20px 1px 0px rgba(0, 0, 0, 0.02);
+	}
+
+	#user__about{
+		/*height: 20rem;*/
+		flex-direction: column;
+	}
+
+	#user__image{
+		height: 6rem;
+		width: 6rem;
+		padding: 5rem;
+	}
+
+	#user__name{
+		text-align: center;
+	}
+
+	#user__links{
+		/*background-color: red;*/
+		/*width: 20rem;*/
+		height: 5rem;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-auto-rows: auto;
+	}
+
+	#repo__user-container{
+
+	}
+
+	#repo__user-info{
+		display: flex;
+	}
+
+	#repo__container{
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		grid-auto-rows: 10rem;
+	}
+
+	#repo__component{
+		height: 100% !important;
+		width: 100% !important;
+		margin: 0 !important;
+	}
+
+	#repo__component-main{
+		justify-content: center;
+	}
+
+	#repo__component-footer{
+		/*background-color: red;*/
+		flex: 1 !important;
+	}
+}
+
+@media (min-width: 912px){
+
+	#search__container{
+		width: 50rem;
+	}
+
+	#user__section{
+		width: 50rem;
+	}
+
+	#repo__user-container{
+		margin: 0 10rem;
+	}
+
+	#repo__container{
+		margin: 0 10rem;
+	}
+}
