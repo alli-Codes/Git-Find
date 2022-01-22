@@ -13,7 +13,6 @@ const searchComponent = (data) => {
 
 			<div id="user__section">
 				<div id="user__about">
-					<div id="user__image" style="background-image: url(${data.avatar_url})">
 					
 				</div>
 
