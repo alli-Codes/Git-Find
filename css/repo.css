@@ -12,13 +12,13 @@
 
 #back__btn{
 	background-color: transparent;
-	/*padding: 3rem 2rem;*/
+	padding: 0 0 2rem 0;
 	border: none;
 	font-size: 1rem;
 	align-self: flex-start;
 	cursor: pointer;
 	transition: all 0.5s ease;
-	position: absolute;
+	/*position: absolute;*/
 	left: 5rem;
 }
 

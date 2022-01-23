@@ -18,6 +18,29 @@ const fetchData = async (user) => {
 	return data
 }
 
+const refinedFetchedData = async (user) => {
+	let data = await fetchData(user)
+
+	for(let props in data){
+		data[props] == '' || data[props] == null ? data[props] = 'Not Available' : undefined
+	}
+
+	return data
+}
+
+const toggleSearchBtn = () => {
+	const newInputField = document.querySelector('#input__field')
+	const searchBtn = document.querySelector('#search__btn')
+	if(newInputField.value == '') {
+		searchBtn.disabled = true
+		searchBtn.style.backgroundColor = 'rgba(0, 0, 0, 0.3)'
+	} else{
+		searchBtn.disabled = false
+		searchBtn.style.backgroundColor = ''
+	}
+	newInputField.addEventListener('input', toggleSearchBtn)
+}
+
 const responsive = () => {
 	const searchBtn = document.querySelector('#search__btn')
 	if(screen.availWidth >= 600){
@@ -25,7 +48,7 @@ const responsive = () => {
 	}
 }
 
-let inputValue = 'slick-codes'
+let inputValue = 'octocat'
 
 const searchUser = () => {
 	const inputData = document.querySelector('#input__field')
@@ -36,15 +59,17 @@ const searchUser = () => {
 
 const display = async (user = inputValue) => {
 	const rootElem = document.querySelector('#root')
-	const userData = await fetchData(user)
+	const userData = await refinedFetchedData(user)
+
+	console.log(refinedFetchedData('octocat'))
 
 	rootElem.innerHTML = searchComponent(userData, display)
 
 	repoComponent(userData)
+	toggleSearchBtn()
 	responsive()
 }
 
-display('slick-codes')
-
+display('octocat')
 
 methods()

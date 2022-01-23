@@ -28,7 +28,6 @@ const repoComponent = (userData, methods) => {
 
 		const showRepos = () => {
 			for(let result of results){
-				result.language == null ? result.language = 'N/A' : undefined
 				 repoContainer.innerHTML += repoItem(result)
 				 console.log(results.length)
 			}

@@ -124,8 +124,9 @@ main{
 }
 
 #user__bio{
+	/*background-color: red;*/
 	width: 80%;
-	padding: 2rem 0 0 0;
+	padding: 2rem 0 0 10px;
 	font-size: 14px;
 	/*word-break: break-all;*/
 }
