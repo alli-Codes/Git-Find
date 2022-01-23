@@ -8,7 +8,7 @@ const methods = () => {
 
 const fetchData = async (user) => {
 	// const data = await fetch('js/utils/data.json')
-	const data = await fetch(`https:api.github.com/users/${user}`)
+	const data = await fetch(`https://api.github.com/users/${user}`)
 					.then(res => res)
 					.then(data => data.json())
 					.catch(err => console.log(err))
