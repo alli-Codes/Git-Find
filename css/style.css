@@ -74,7 +74,7 @@ main{
 
 #search__container button{
 	color: #00d99c;
-	background-color: transparent;
+	background-color: transparent !important;
 	border: none;
 	flex: 0.2;
 	padding: 10px;
