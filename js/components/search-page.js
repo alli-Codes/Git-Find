@@ -29,7 +29,7 @@ const searchComponent = (data) => {
 					</div>
 
 					<div id="user__info">
-						<button><span id="user__followers">${data.followers}</span> Followers</button>
+						<button id="follower__btn"><span id="user__followers">${data.followers}</span> Followers</button>
 						<button><span id="user__following">${data.following}</span> Following</button>
 						<button id="repo__btn"><span id="user__repos">${data.public_repos}</span> Repos</button>
 					</div>

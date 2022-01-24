@@ -1,6 +1,6 @@
 import repoItem from './repo-item.js'
 import userDetails from './repo-user.js'
-import searchComponent from '../components/search-page.js'
+import searchComponent from '../search-page.js'
 
 const repoComponent = (userData, methods) => {
 
@@ -38,7 +38,7 @@ const repoComponent = (userData, methods) => {
 		rootElem.append(repoContainer)
 	})
 
-	return repoComponent
+	// return repoComponent
 }
 
 export default repoComponent

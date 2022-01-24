@@ -3,7 +3,9 @@
 }
 
 #repo__user-container{
-	height: 5rem;
+	/*background-color: red;*/
+	/*height: 5rem;*/
+	margin: 0 0 1rem 0;
 	display: flex;
 	align-items: center;
 	/*justify-content: space-around;*/
@@ -12,7 +14,7 @@
 
 #back__btn{
 	background-color: transparent;
-	padding: 0 0 2rem 0;
+	margin: 0 0 2rem 0;
 	border: none;
 	font-size: 1rem;
 	align-self: flex-start;
@@ -23,11 +25,14 @@
 }
 
 #back__btn:hover{
-	font-size: 1.3rem;
+	transform: scale(1.2);
+}
+
+#back__btn:active{
+	transform: scale(1.2);
 }
 
 #repo__user-info{
-	/*display: flex;*/
 	align-items: center;
 }
 
@@ -36,14 +41,13 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 4rem;
-	width: 4rem;
+	height: 5rem;
+	width: 5rem;
 	padding: 2rem;
 	border-radius: 100%;
 }
 
 #repo__user-name{
-	padding: 0 1rem;
 	font-size: 14px;
 }
 
@@ -65,7 +69,7 @@
 
 #repo__container{
 	/*background-color: red;*/
-	margin-top: 3rem;
+	/*margin-top: 3rem;*/
 }
 
 #repo__component{

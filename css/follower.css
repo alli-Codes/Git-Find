@@ -1,0 +1,37 @@
+#follower__container{
+	/*display: grid;*/
+}
+
+#follower__component{
+	background-color: #d8f5ec;
+	/*height: 4rem;*/
+	width: 80%;
+	padding: 10px 10px;
+	margin: 10px 0;
+	border-radius: 5px;
+	display: flex;
+	/*flex-direction: column;*/
+	/*justify-content: center;*/
+	align-items: center;
+	font-size: 12px;
+	transition: all 1s ease-out;
+}
+
+#follower__image{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 4rem;
+	width: 4rem;
+	padding: 2rem;
+	border-radius: 100%;
+}
+
+#follower__component p{
+	color: #009168;
+	margin: 0 0 0 20px;
+	font-family: poppins;
+	/*font-style: italic;*/
+	font-weight: 500;
+	word-break: break-all;
+}

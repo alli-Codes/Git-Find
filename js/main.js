@@ -1,5 +1,6 @@
 import searchComponent from './components/search-page.js'
-import repoComponent from './components/repo-page.js'
+import followerComponent from './components/followers/follower-page.js'
+import repoComponent from './components/repo/repo-page.js'
 
 const methods = () => {
 	document.display = display
@@ -65,6 +66,7 @@ const display = async (user = inputValue) => {
 
 	rootElem.innerHTML = searchComponent(userData, display)
 
+	followerComponent(userData)
 	repoComponent(userData)
 	toggleSearchBtn()
 	responsive()
