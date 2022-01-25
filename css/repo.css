@@ -96,16 +96,16 @@
 	flex: 2;
 	display: flex;
 	flex-direction: column;
-	word-break: break-all;
+	/*word-break: break-all;*/
 	/*justify-content: center;*/
 	/*font-weight: lighter;*/
 }
 
 #repo__component-main p{
 	color: #5d736c;
-	margin: 0.5rem 0 0 0;
+	margin: 0.5rem 0 0.5rem 0;
 	width: 70%;
-	word-break: break-all;
+	/*word-break: break-all;*/
 	font-size: 10px;
 }
 

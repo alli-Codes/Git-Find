@@ -20,7 +20,7 @@
 
 	#search__container button{
 		color: white;
-		background-color: #00d99c !important;
+		background-color: #00d99c;
 		border-radius: 5px;
 		padding: 10px 10px;
 		flex: 0.8;

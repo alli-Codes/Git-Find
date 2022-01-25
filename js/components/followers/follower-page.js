@@ -21,7 +21,7 @@ const followerBtn = document.querySelector('#follower__btn')
 
 		const rootElem = document.querySelector('#root')
 		rootElem.innerHTML = ''
-		rootElem.innerHTML = `<button id="back__btn" onclick="display()"><i class="fas fa-arrow-left"></i></button> ${userDetails(userData, results)}`
+		rootElem.innerHTML = `<button id="back__btn" onclick="display()"><i class="fas fa-arrow-left"></i></button> ${userDetails(userData, results, 'Followers')}`
 
 
 		const showFollowers = () => {

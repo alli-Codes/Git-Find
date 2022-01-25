@@ -1,6 +1,4 @@
 const searchComponent = (data) => {
-	// let user = {}
-	// data.forEach(item => user = item)
 	const component = `
 
 			<div id="search__section">
@@ -30,7 +28,7 @@ const searchComponent = (data) => {
 
 					<div id="user__info">
 						<button id="follower__btn"><span id="user__followers">${data.followers}</span> Followers</button>
-						<button><span id="user__following">${data.following}</span> Following</button>
+						<button id="following__btn"><span id="user__following">${data.following}</span> Following</button>
 						<button id="repo__btn"><span id="user__repos">${data.public_repos}</span> Repos</button>
 					</div>
 

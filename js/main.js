@@ -1,5 +1,6 @@
 import searchComponent from './components/search-page.js'
 import followerComponent from './components/followers/follower-page.js'
+import followingComponent from './components/following/following-page.js'
 import repoComponent from './components/repo/repo-page.js'
 
 const methods = () => {
@@ -34,10 +35,17 @@ const toggleSearchBtn = () => {
 	const searchBtn = document.querySelector('#search__btn')
 	if(newInputField.value == '') {
 		searchBtn.disabled = true
-		searchBtn.style.backgroundColor = 'rgba(0, 0, 0, 0.3)'
+
+		if(screen.availWidth >= 600){
+			searchBtn.style.backgroundColor = 'rgba(0, 0, 0, 0.3)'
+		} else{
+			searchBtn.style.color = 'rgba(0, 0, 0, 0.3)'
+		}
+
 	} else{
 		searchBtn.disabled = false
 		searchBtn.style.backgroundColor = ''
+		searchBtn.style.color = ''
 	}
 	newInputField.addEventListener('input', toggleSearchBtn)
 }
@@ -62,11 +70,10 @@ const display = async (user = inputValue) => {
 	const rootElem = document.querySelector('#root')
 	const userData = await refinedFetchedData(user)
 
-	console.log(refinedFetchedData('octocat'))
-
 	rootElem.innerHTML = searchComponent(userData, display)
 
 	followerComponent(userData)
+	followingComponent(userData)
 	repoComponent(userData)
 	toggleSearchBtn()
 	responsive()

@@ -74,7 +74,7 @@ main{
 
 #search__container button{
 	color: #00d99c;
-	background-color: transparent !important;
+	background-color: transparent;
 	border: none;
 	flex: 0.2;
 	padding: 10px;
@@ -104,7 +104,6 @@ main{
 	width: 6rem;
 	padding: 2rem;
 	border-radius: 100%;
-	/*align-self: center;*/
 }
 
 #user__name{
@@ -115,6 +114,7 @@ main{
 	font-size: 1.3rem;
 	font-weight: 400;
 	font-family: 'Poppins', sans-serif;
+	word-break: break-all;
 }
 
 #user__name p{
@@ -124,7 +124,6 @@ main{
 }
 
 #user__bio{
-	/*background-color: red;*/
 	width: 80%;
 	padding: 2rem 0 0 10px;
 	font-size: 14px;

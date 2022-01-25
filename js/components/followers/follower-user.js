@@ -1,4 +1,4 @@
-const userDetails = (userData, results) => {
+const userDetails = (userData, results, type) => {
 	const user = `
 				<div id="repo__user-container">
 					<div id="repo__user-info">
@@ -13,7 +13,7 @@ const userDetails = (userData, results) => {
 					</div>
 
 					<div id="repo__user-count">
-						<p><span>${results.length}</span>Followers</p>
+						<p><span>${results.length}</span>${type}</p>
 					</div>
 				</div>
 	`
