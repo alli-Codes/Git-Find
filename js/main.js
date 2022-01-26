@@ -9,13 +9,10 @@ const methods = () => {
 }
 
 const fetchData = async (user) => {
-	// const data = await fetch('js/utils/data.json')
 	const data = await fetch(`https://api.github.com/users/${user}`)
 					.then(res => res)
 					.then(data => data.json())
 					.catch(err => console.log(err))
-
-	// const searchedUser = data.filter((item) => item.username == user ? item : undefined)
 
 	return data
 }
@@ -24,7 +21,7 @@ const refinedFetchedData = async (user) => {
 	let data = await fetchData(user)
 
 	for(let props in data){
-		data[props] == '' || data[props] == null ? data[props] = 'Not Available' : undefined
+		data[props] === '' || data[props] === null ? data[props] = 'Not Available' : undefined
 	}
 
 	return data
@@ -70,7 +67,7 @@ const display = async (user = inputValue) => {
 	const rootElem = document.querySelector('#root')
 	const userData = await refinedFetchedData(user)
 
-	rootElem.innerHTML = searchComponent(userData, display)
+	userData.message !== 'Not Found' ? rootElem.innerHTML = searchComponent(userData, display) : undefined
 
 	followerComponent(userData)
 	followingComponent(userData)
