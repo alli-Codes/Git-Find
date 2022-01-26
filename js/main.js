@@ -79,3 +79,5 @@ const display = async (user = inputValue) => {
 display('octocat')
 
 methods()
+
+document.addEventListener('keydown', e => event.key == "Enter" ? searchUser() : undefined, false);
