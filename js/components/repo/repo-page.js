@@ -29,7 +29,6 @@ const repoComponent = (userData, methods) => {
 		const showRepos = () => {
 			for(let result of results){
 				 repoContainer.innerHTML += repoItem(result)
-				 console.log(results.length)
 			}
 		}
 

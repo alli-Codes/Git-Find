@@ -27,7 +27,6 @@ const followerBtn = document.querySelector('#follower__btn')
 		const showFollowers = () => {
 			for(let result of results){
 				 followerContainer.innerHTML += followerItem(result)
-				 console.log(results.length)
 			}
 		}
 
