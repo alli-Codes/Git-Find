@@ -3,8 +3,6 @@
 }
 
 #repo__user-container{
-	/*background-color: red;*/
-	/*height: 5rem;*/
 	margin: 0 0 1rem 0;
 	display: flex;
 	align-items: center;
@@ -14,7 +12,7 @@
 
 #back__btn{
 	background-color: transparent;
-	margin: 0 0 2rem 0;
+	margin: 2rem 0 1rem 0;
 	border: none;
 	font-size: 1rem;
 	align-self: flex-start;
@@ -68,8 +66,6 @@
 }
 
 #repo__container{
-	/*background-color: red;*/
-	/*margin-top: 3rem;*/
 }
 
 #repo__component{

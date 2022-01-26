@@ -35,7 +35,13 @@ main{
 	flex: 5;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/*justify-content: center*/
+}
+
+#search__page{
+	display: flex;
+	flex-direction: column;
+	margin: auto 0;
 }
 
 #search__section{

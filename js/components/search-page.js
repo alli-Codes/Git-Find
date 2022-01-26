@@ -1,6 +1,6 @@
 const searchComponent = (data) => {
 	const component = `
-
+		<div id="search__page">
 			<div id="search__section">
 				<div id="search__container">
 					<i class="fas fa-search"></i>
@@ -55,6 +55,7 @@ const searchComponent = (data) => {
 					</div>
 				</div>
 			</div>
+		</div>
 	`
 
 	return component
